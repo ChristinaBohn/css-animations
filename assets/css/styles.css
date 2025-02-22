@@ -79,19 +79,18 @@ h2 {
 /* Second Animation - Pulsing Sun */
 .container-2 {
     position: relative;
-    top: 35%;
+    top: 40%;
 }
 
-.sun {
+.star {
     position: absolute;
-    height: 50px;
-    width: 50px;
-    background-color: yellow;
-    /* border: 2px solid yellow; */
-    border-radius: 50%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: 200px;  
+    aspect-ratio: 1;
+    background: conic-gradient(yellow, orange, yellow, orange, yellow, orange, yellow, orange, yellow, orange, yellow);
+    clip-path: polygon(50% 0,79% 90%,2% 35%,98% 35%,21% 90%); 
 }
 
 
