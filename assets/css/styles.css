@@ -35,7 +35,7 @@ h2 {
     font-size: 1.75rem;
 }
 
-/* First Animation - Rainbow Wheel */
+/* 1. Rainbow Wheel (add wheel reverse on click?) */
 .container-1 {
     position: relative;
     top: 38%;
@@ -76,7 +76,7 @@ h2 {
     }
 }
 
-/* Second Animation - Pulsing Sun */
+/* 2. 3D Star (add a starburst in background on click?) */
 .container-2 {
     position: relative;
     top: 40%;
@@ -90,8 +90,58 @@ h2 {
     width: 200px;  
     aspect-ratio: 1;
     background: conic-gradient(yellow, orange, yellow, orange, yellow, orange, yellow, orange, yellow, orange, yellow);
-    clip-path: polygon(50% 0,79% 90%,2% 35%,98% 35%,21% 90%); 
+    clip-path: polygon(50% 0,79% 90%,2% 35%,98% 35%,21% 90%);
 }
+
+/* 3. Crossword Text  */
+.container-3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: -48px;
+    margin-top: 50px;
+    width: 100%;
+}
+
+.container-3 .word {
+    display: flex;
+}
+
+.container-3 .word .letter {
+    width: 1.4em;
+    height: 1.5em;
+    margin: 0.05em;
+    background-color: #636363;
+    color: white;
+    text-align: center;
+    user-select: none;
+    position: relative;
+    order: 2;
+    right: 50%;
+}
+
+.container-3 .word .letter:before {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+  
+.container-3 .word .letter:last-child {
+    margin-right: auto;
+}
+  
+.container-3 .word .pivot {
+    background-color: rgb(184, 5, 5);
+}
+  
+.container-3 .word .pivot,
+.container-3 .word .pivot ~ .letter {
+    order: 1;
+    left: 50%;
+}
+
 
 
 /* TODO: Be able to turn the tiles "on" and "off" have multiple on at a time */
