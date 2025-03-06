@@ -35,7 +35,7 @@ h2 {
     font-size: 1.75rem;
 }
 
-/* 1. Rainbow Wheel (add wheel reverse on click?) */
+/* 1. Rainbow Wheel (TODO: add wheel reverse on click, on hover larger scale and darker shadow - make it look like it's rising off the page) */
 .container-1 {
     position: relative;
     top: 38%;
@@ -76,7 +76,11 @@ h2 {
     }
 }
 
-/* 2. 3D Star (add a starburst in background on click?) */
+.circle:hover {
+    animation-direction: reverse;
+}
+
+/* 2. 3D Star (TODO: add a starburst in background on click, or some animation) */
 .container-2 {
     position: relative;
     top: 40%;
@@ -93,7 +97,7 @@ h2 {
     clip-path: polygon(50% 0,79% 90%,2% 35%,98% 35%,21% 90%);
 }
 
-/* 3. Crossword Text  */
+/* 3. Crossword Text - TODO: transform red letters on hover */
 .container-3 {
     display: flex;
     align-items: center;
