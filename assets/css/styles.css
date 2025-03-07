@@ -146,6 +146,9 @@ h2 {
     left: 50%;
 }
 
+.container-3 .word .pivot:hover {
+    background-color: black;
+}
 
 
 /* TODO: Be able to turn the tiles "on" and "off" have multiple on at a time */
