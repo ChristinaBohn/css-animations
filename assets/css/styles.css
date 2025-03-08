@@ -35,7 +35,7 @@ h2 {
     font-size: 1.75rem;
 }
 
-/* 1. Rainbow Wheel (TODO: add wheel reverse on click, on hover larger scale and darker shadow - make it look like it's rising off the page) */
+/* 1. Rainbow Wheel (TODO: can you make it look like it's rising off the page without messing up position */
 .container-1 {
     position: relative;
     top: 38%;
@@ -83,21 +83,40 @@ h2 {
 /* 2. 3D Star (TODO: add a starburst in background on click, or some animation) */
 .container-2 {
     position: relative;
-    top: 40%;
+    top: 10%;
+    left: 15%;
 }
 
 .star {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     width: 200px;  
     aspect-ratio: 1;
     background: conic-gradient(yellow, orange, yellow, orange, yellow, orange, yellow, orange, yellow, orange, yellow);
     clip-path: polygon(50% 0,79% 90%,2% 35%,98% 35%,21% 90%);
 }
 
-/* 3. Crossword Text - TODO: transform red letters on hover */
+@keyframes bounceIn {
+    0% {
+      transform: scale(0.1);
+      opacity: 0;
+    }
+    50% {
+      transform: scale(1.4);
+      opacity: 1;
+    }
+    70% {
+        transform: scale(0.8);
+    }
+    100% {
+      transform: scale(1);
+    }
+}
+
+.star:hover {
+    animation: bounceIn 1.5s;
+}
+
+/* 3. Crossword Text */
 .container-3 {
     display: flex;
     align-items: center;
