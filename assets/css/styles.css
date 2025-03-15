@@ -169,5 +169,32 @@ h2 {
     background-color: black;
 }
 
+/* 4. Sky Animation */
+#sky {
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(rgb(154, 243, 243), rgb(248, 160, 27));
+    overflow: hidden;
+}
+
+#sky-title {
+    position: fixed;
+    left: 100px;
+    z-index: 1;
+}
+
+@keyframes floatUp {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-100%);
+    }
+}
+
+.cloud {
+    animation: floatUp 25s linear infinite;
+}
+
 
 /* TODO: Be able to turn the tiles "on" and "off" have multiple on at a time */

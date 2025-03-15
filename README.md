@@ -1,2 +1,2 @@
 # css-animations
-A space to play around with CSS animations
+A space to play around with CSS and JS animations
