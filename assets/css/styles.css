@@ -193,5 +193,5 @@ h2 {
     animation: floatUp 25s linear infinite;
 }
 
-
+/* Create a reveal button where the 4 edges of the button float away and rotate to become the four sides of a box with text inside, the original button text fades away */
 /* TODO: Be able to turn the tiles "on" and "off" have multiple on at a time */
