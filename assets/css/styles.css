@@ -4,11 +4,15 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: rgb(238, 239, 245);
+}
+
 header {
     padding: 40px;
     text-align: center;
     color: rgb(42, 42, 42);
-    font-family: Delicious Handrawn, serif;
+    font-family: "Bytesized", serif;
     font-size: 1.25rem;
 }
 
@@ -25,13 +29,14 @@ header {
     margin: 6px;
     border-radius: 3px;
     box-shadow: 3px 3px 3px lightgray;
+    background-color: #fff;
 }
 
 h2 {
     padding: 10px;
     text-align: center;
     color: rgb(42, 42, 42);
-    font-family: Delicious Handrawn, serif;
+    font-family: "Bytesized", serif;
     font-size: 1.75rem;
     position: absolute;
     width: inherit;
@@ -192,6 +197,39 @@ h2 {
 .cloud {
     animation: floatUp 25s linear infinite;
 }
+
+/* 5. Disco Mode */
+#buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20%;
+}
+
+#buttons button {
+    width: 50%;
+    margin: 8px;
+    padding: 10px;
+    font-family: "Winky Sans";
+    font-size: 1.2em;
+    color: black;
+    border: 5px solid black;
+    border-radius: 50px;
+    background-color: white;
+    box-shadow: 3px 3px gray,
+        inset 2px 2px gray;
+}
+
+#buttons button:hover {
+    background-color: rgb(185, 185, 185);
+}
+
+#buttons button:active {
+    box-shadow: 1px 1px gray,
+        inset 4px 4px gray;
+    background-color: linear-gradient(rgb(185, 185, 185), gray);
+}
+
 
 /* Create a reveal button where the 4 edges of the button float away and rotate to become the four sides of a box with text inside, the original button text fades away */
 /* TODO: Be able to turn the tiles "on" and "off" have multiple on at a time */
