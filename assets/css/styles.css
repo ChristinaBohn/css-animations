@@ -216,8 +216,8 @@ h2 {
     border: 5px solid black;
     border-radius: 50px;
     background-color: white;
-    box-shadow: 3px 3px gray,
-        inset 2px 2px gray;
+    box-shadow: 3px 3px gray;
+        /* inset 1px 1px gray; */
 }
 
 #buttons button:hover {
@@ -225,10 +225,11 @@ h2 {
 }
 
 #buttons button:active {
-    box-shadow: 1px 1px gray,
-        inset 4px 4px gray;
-    background-color: linear-gradient(rgb(185, 185, 185), gray);
+    box-shadow: -1px -1px gray;
+    background-color: rgb(185, 185, 185);
+    transform: translateY(5%);
 }
+
 
 
 /* Create a reveal button where the 4 edges of the button float away and rotate to become the four sides of a box with text inside, the original button text fades away */
