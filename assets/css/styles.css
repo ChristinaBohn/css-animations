@@ -199,34 +199,49 @@ h2 {
 }
 
 /* 5. Disco Mode */
-#buttons {
+:root {
+    --disco-black: rgb(17, 17, 17);
+    --disco-gray: rgb(100, 100, 100);
+    --disco-silver: rgb(200, 200, 200);
+    --disco-white: rgb(250, 250, 250);
+}
+
+#disco-tile {
+    background-color: var(--disco-white);
+}
+
+#disco-title {
+    color: var(--disco-black);
+}
+
+#disco-buttons {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 20%;
 }
 
-#buttons button {
+#disco-buttons button {
     width: 50%;
     margin: 8px;
     padding: 10px;
     font-family: "Winky Sans";
-    font-size: 1.2em;
-    color: black;
-    border: 5px solid black;
+    font-size: 1.4em;
+    font-weight: 600;
+    color: var(--disco-black);
+    border: 5px solid var(--disco-black);
     border-radius: 50px;
-    background-color: white;
-    box-shadow: 3px 3px gray;
-        /* inset 1px 1px gray; */
+    background-color: var(--disco-white);
+    box-shadow: 3px 3px var(--disco-gray);
 }
 
-#buttons button:hover {
-    background-color: rgb(185, 185, 185);
+#disco-buttons button:hover {
+    background-color: var(--disco-silver);
 }
 
-#buttons button:active {
-    box-shadow: -1px -1px gray;
-    background-color: rgb(185, 185, 185);
+#disco-buttons button:active {
+    box-shadow: -1px -1px var(--disco-gray);
+    background-color: var(--disco-silver);
     transform: translateY(5%);
 }
 
