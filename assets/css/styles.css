@@ -218,7 +218,7 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 20%;
+    margin-top: 18%;
 }
 
 #disco-buttons button {
@@ -245,7 +245,37 @@ h2 {
     transform: translateY(5%);
 }
 
+.animate-disco {
+    animation: disco-animation 2s linear infinite;
+}
+
+@keyframes disco-animation {
+    0% {
+        --disco-black: magenta;
+        --disco-gray: cyan;
+        --disco-silver: yellow;
+        --disco-white: black;
+    }
+    25% {
+        --disco-black: cyan;
+        --disco-gray: yellow;
+        --disco-silver: black;
+        --disco-white: magenta;
+    }
+    50% {
+        --disco-black: yellow;
+        --disco-gray: black;
+        --disco-silver: magenta;
+        --disco-white: cyan;
+    }
+    75% {
+        --disco-black: black;
+        --disco-gray: magenta;
+        --disco-silver: cyan;
+        --disco-white: yellow;
+    }
+}
+
 
 
 /* Create a reveal button where the 4 edges of the button float away and rotate to become the four sides of a box with text inside, the original button text fades away */
-/* TODO: Be able to turn the tiles "on" and "off" have multiple on at a time */
