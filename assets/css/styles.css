@@ -198,7 +198,7 @@ h2 {
     animation: floatUp 25s linear infinite;
 }
 
-/* 5. Disco Mode */
+/* 5. Disco Mode TODO: add tiny spinning disco ball in corner */
 :root {
     --disco-black: rgb(17, 17, 17);
     --disco-gray: rgb(100, 100, 100);
@@ -276,6 +276,20 @@ h2 {
     }
 }
 
+/* 6. 3d Text */
+#text-3d {
+    background-color: rgb(255, 206, 255);
+}
 
+#text-3d p {
+    text-align: center;
+    margin-top: 60px;
+    font-size: 10em;
+    font-family: sans-serif;
+    font-weight: 800;
+    color: rgb(255, 206, 255);
+    text-shadow: 5px 5px 0px rgb(217, 176, 217);
+    -webkit-text-stroke: 1px rgb(254, 224, 254);
+}
 
 /* Create a reveal button where the 4 edges of the button float away and rotate to become the four sides of a box with text inside, the original button text fades away */
