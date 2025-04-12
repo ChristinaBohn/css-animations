@@ -294,30 +294,24 @@ h2 {
 
 /* 7. Wave Text */
 #wave-tile {
-    background:#833ab4; 
     background: linear-gradient(to bottom, #65FAFF, rgb(235, 235, 136));
-  }
+}
   
-  /* body,
-  html {
-    display: grid;
-    place-content: center;
-    height: 100%;
-    font-family: helvetica neue, helvetica, sans-serif;
-  } */
-  
-  #wave-text {
+#wave-text {
     isolation: isolate; 
     mix-blend-mode: multiply;
     position: relative;
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 600;
-    font-size: 4rem;
-    margin-top: 80px;
-  }
-  
-  #wave-text::before {
+    font-family: "Winky Sans", Helvetica, sans-serif;
+    font-weight: 800;
+    font-size: 5rem;
+    line-height: 0.8;
+    margin-top: 90px;
+    /* To block out top and bottom of wave image: */
+    mask-image: linear-gradient(transparent, rgba(0, 0, 0, 1.0) 30%, transparent 100%);
+}
+
+#wave-text::before {
     content: "";
     display: block;
     top: 0;
@@ -332,11 +326,9 @@ h2 {
     animation: darken 9s 4s;
     opacity: 1;
     animation-fill-mode: forwards;
-  }
-  
-  
-  #wave-text > * {
-    /* font-size: clamp(40px, 5vw, 201px); */
+}
+
+#wave-text > * {
     position: relative;
     padding: 20px;
     margin: -20px;
@@ -345,9 +337,9 @@ h2 {
     color: #0BD3D3;
     overflow: hidden;
     animation: blur 7s;
-  }
+}
   
-  #wave-text > *::after {
+#wave-text > *::after {
     content: "";
     display: block;
     top: 0;
@@ -358,37 +350,34 @@ h2 {
     mix-blend-mode: screen;
     animation: move 10s;
     animation-fill-mode: forwards;
-  }
+}
   
-  @keyframes move {
+@keyframes move {
     from {
       transform: translateX(0);
   
     }
-    
     to {
       transform: translateX(-100%)
     }
-  }
+}
   
-  @keyframes darken {
+@keyframes darken {
     from {
       opacity: 1
     }
-    
     to {
       opacity: 0;
     }
-  }
+}
   
-  @keyframes blur {
+@keyframes blur {
     from {
       filter: blur(10px);
     }
-    
     to {
       filter: blur(0px);
     }
-  }
+}
 
 /* Create a reveal button where the 4 edges of the button float away and rotate to become the four sides of a box with text inside, the original button text fades away */
